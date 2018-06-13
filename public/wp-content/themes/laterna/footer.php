@@ -87,6 +87,8 @@
     </div>
 </footer>
 <!-- Footer end -->
+
+<!-- end div#app -->
 </div>
 
 <?php wp_footer(); ?>

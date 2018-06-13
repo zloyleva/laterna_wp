@@ -38,7 +38,6 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
 define('FS_METHOD', 'direct');
-//define ('WPLANG', 'ru_RU');
 
 /**#@+
  * Authentication Unique Keys and Salts.

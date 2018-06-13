@@ -13,7 +13,10 @@
 
 </head>
 <body>
+
 <div id="app">
+<!-- start div#app -->
+
     <div class="container-fluid first-row-header">
         <div class="row">
             <div class="container">
@@ -23,7 +26,7 @@
                         <li class="list-inline-item"><a href="mailto: info@laterna.sk">info@laterna.sk</a></li>
                     </ul>
                     <form class="form-inline my-2 col-md-6 col-sm-12">
-                        <input class="form-control mr-sm-2" type="search" placeholder="<?php _e('Search', 'laterna')?>..." aria-label="Search">
+                        <input name="s" class="form-control mr-sm-2" type="search" placeholder="<?php _e('Search', 'laterna')?>..." aria-label="Search">
                         <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><?php _e('Search', 'laterna')?></button>
                     </form>
                 </div>
@@ -60,14 +63,3 @@
         </div>
     </div>
     <!-- Main menu end -->
-
-<?php
-$to      = 'nobody@example.com';
-$subject = 'the subject';
-$message = 'hello';
-$headers = 'From: webmaster@example.com' . "\r\n" .
-           'Reply-To: webmaster@example.com' . "\r\n" .
-           'X-Mailer: PHP/' . phpversion();
-
-mail($to, $subject, $message, $headers);
-?>
