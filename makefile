@@ -54,3 +54,6 @@ rm_volume: #remove docker volume name=[volumeName]
 
 mix_watch: #run mix in watch
 	@sudo docker exec -it $(docker_nodejs) bash -c 'npm run watch && chmod -R 777 .'
+
+populate_vendors: #generate dock
+	@sudo docker exec -it $(docker_name) bash -c 'cp -R ./vendor ./ven && chmod -R 777 .' && sudo sh -c 'rm -R ./vendor; mv ./ven ./vendor'
