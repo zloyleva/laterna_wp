@@ -1,0 +1,134 @@
+$desc_text_color: #747572;
+
+.content-section.brown, .blog-section.brown, .contact-section.brown, .article-section.brown{
+  background-color: #f9faf5;
+  .row{
+    .container{
+      .row{
+        .col.div-img{
+          img{
+            width: 16px;
+          }
+        }
+        h2{
+          font-weight: 900;
+        }
+        p.desc{
+          color: $desc_text_color;
+        }
+
+        .field-column{
+          display: flex;
+          flex-direction: column;
+          .text-content{
+            flex: 1;
+          }
+          div.dots{
+            display: flex;
+            justify-content: center;
+            span.dot{
+              margin: 2px;
+              width: 6px;
+              height: 6px;
+              border-radius: 50%;
+              background-color: #d1d4ca;
+            }
+          }
+        }
+      }
+      .row.articles{
+        .article{
+          .thumbnail{}
+          .row{
+            .col-12{
+              .title{
+                font-weight: 700;
+                a{
+                  text-decoration: none;
+                  color: #3f3f3f;
+                  &:hover{
+                    color: #6e6e6e;
+                  }
+                }
+              }
+              .excerpt{
+                font-size: .9em;
+              }
+            }
+            .footer{
+              p{
+                border-top: 1px solid #cacaca;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.content-section.blue {
+  background-color: #1A2A41;
+  .row {
+    .container {
+      .row {
+        .col.div-img {
+          img {
+            width: 16px;
+          }
+        }
+        h2{
+          font-weight: 900;
+          color: #fff;
+        }
+        p.desc{
+          color: $desc_text_color;
+        }
+
+        .seo-item{
+          .row{
+            .content-block{
+              .heading{
+                color: #0ebaef;
+                font-weight: 900;
+                &.left-text{
+                  text-align: right;
+                }
+              }
+              p{
+                color: #fff;
+                &.left-text{
+                  text-align: right;
+                }
+              }
+              @media (max-width: 768px){
+                &{
+                  order: 1;
+                  .heading.left-text, p.left-text, .heading.right-text, p.right-text{
+                    text-align: center;
+                  }
+                }
+              }
+            }
+            .icon-block{
+              @media (max-width: 768px){
+                &{
+                  order: 0;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact-section.brown{
+  .row{
+    .container{
+
+    }
+  }
+}

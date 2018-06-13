@@ -1,0 +1,24 @@
+.slider-section{
+  background-image: url("../images/slide_1.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .row{
+    .container{
+      .row{
+        .image-container{
+          align-items: flex-end;
+        }
+        .slider-content{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          color: #fff;
+          h2{
+            font-weight: 900;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@mixin md-center(){
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@mixin xs-space-evenly(){
+  @media (max-width: 575px) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@mixin xs-w-100(){
+  @media (max-width: 575px) {
+    width: 100%;
+  }
+}

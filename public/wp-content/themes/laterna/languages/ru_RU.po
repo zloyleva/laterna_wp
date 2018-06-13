@@ -1,0 +1,323 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-11 22:33+0300\n"
+"PO-Revision-Date: 2018-06-11 22:41+0300\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Last-Translator: \n"
+"Language: ru_RU\n"
+
+#: header.php:27
+msgid "Search"
+msgstr "Поиск"
+
+#: header.php:47 footer.php:18
+msgid "Home"
+msgstr ""
+
+#: header.php:50 footer.php:19 index.php:18
+msgid "Services"
+msgstr "Услуги"
+
+#: header.php:53 footer.php:8 footer.php:20
+msgid "About Us"
+msgstr "О нас"
+
+#: header.php:56 footer.php:21
+msgid "Contacts"
+msgstr "Контакты"
+
+#: footer.php:9
+msgid ""
+"Our team is as unique in our professional backgrounds as we are in "
+"lifestyle, but what we all have in commonis an intense curiosity about our "
+"world, desire to be a part of something bigger, creative vision, and "
+"dedication to our work."
+msgstr ""
+
+#: footer.php:10
+msgid "17, Novembra 90/3739, 080 01 Presov, Slovakia"
+msgstr ""
+
+#: footer.php:16
+msgid "General Information"
+msgstr "Общая информация"
+
+#: footer.php:26
+msgid "Recent Posts"
+msgstr "Последние посты"
+
+#: footer.php:63
+msgid "Get In Touch"
+msgstr "Связаться"
+
+#: footer.php:66
+msgid "Name"
+msgstr "Имя"
+
+#: footer.php:69
+msgid "Email"
+msgstr ""
+
+#: footer.php:72
+msgid "Massage"
+msgstr "Сообщение"
+
+#: footer.php:74 index.php:97
+msgid "Submit"
+msgstr "Подтвердить"
+
+#: index.php:15
+msgid "Search engine optimisaton(SEO)"
+msgstr "Поисковая оптимизация (SEO)"
+
+#: index.php:16
+msgid ""
+"We’re an SEO agency that runs remarkably successful SEO campaigns in the "
+"most competitive sectors, using a unique blend of technical and creative "
+"expertise."
+msgstr ""
+"Мы — SEO-агентство, которое проводит исключительно успешные SEO-кампании в "
+"самых конкурентных секторах, используя уникальный комплекс технических и "
+"креативных знаний."
+
+#: index.php:19
+msgid "Last news"
+msgstr "Последние новости"
+
+#: index.php:38
+msgid ""
+"Our full-service web solutions help your business grow online leads, calls, "
+"and revenue"
+msgstr ""
+"Благодаря нашему полному комплексу Интернет-решений вы сможете увеличить "
+"количество новых онлайн-клиентов и звонков, а также доход от вашего бизнеса."
+
+#: index.php:39
+msgid ""
+"Laterna s.r.o is Internet marketing company offering innovative web "
+"marketing solutions to mid to large size companies across the globe"
+msgstr ""
+"Laterna s.r.o — это компания, специализирующаяся на Интернет-маркетинге. Мы "
+"предлагаем инновационные решения в сфере Интернет-маркетинга для среднего и "
+"крупного бизнеса на международном уровне. "
+
+#: index.php:47
+msgid ""
+"Our firm prides ourselves on driving traffic, converting visitors, and "
+"measuring effectiveness to ultimately deliver real results for our clients."
+msgstr ""
+"Наша компания гордится своим умением наращивать трафик, проводить конверсию "
+"посетителей в покупателей, а также оценивать эффективность проведенной "
+"работы, что в конечном итоге дает реальные результаты нашим клиентам."
+
+#: index.php:58
+msgid ""
+"Our team of online marketing and SEO consultants are driven professionals "
+"who balance passion, creativity, and accountability to produce great results."
+msgstr ""
+"Наша команда онлайн-маркетологов и SEO-консультантов состоит из "
+"целеустремленных профессионалов, которые объединены энтузиазмом, "
+"креативностью и ответственностью в достижении блестящих результатов."
+
+#: index.php:69
+msgid ""
+"Our digital marketing agency was founded on the desire to bring more "
+"transparency to a complex, ever-changing industry."
+msgstr ""
+"Наше агентство Интернет-маркетинга было основано на стремлении привнести "
+"бóльшую прозрачность в эту сложную, постоянно меняющуюся отрасль."
+
+#: index.php:87
+msgid "Ready to grow?"
+msgstr "Готовы расти?"
+
+#: index.php:88
+msgid "Request a free SEO consultation"
+msgstr "Оставьте заявку на бесплатную SEO-консультацию"
+
+#: index.php:92
+msgid "Type Your name here"
+msgstr "Введите свое имя"
+
+#: index.php:95
+msgid "Type Your Mail here"
+msgstr "Введите свой email"
+
+#: index.php:114
+msgid "Our Services"
+msgstr "Наши услуги"
+
+#: index.php:115
+msgid "Our SEO Consulting services include:"
+msgstr "Наши услуги по SEO-консультированию включают:"
+
+#: index.php:122
+msgid "SEO strategy development"
+msgstr "Разработка SEO-стратегии"
+
+#: index.php:123
+msgid ""
+"Not sure what you need, but have an SEO budget?We’ll help you define a "
+"custom needs assessment and strategy for long-termsearch marketing success"
+msgstr ""
+"Не уверены в том, что именно вам нужно, но средства на поисковую оптимизацию "
+"выделены? Мы поможем вам провести оценку ваших потребностей и разработать "
+"стратегию для долгосрочного успеха в поисковом маркетинге."
+
+#: index.php:137
+msgid "Implementation guidelines"
+msgstr "Рекомендации по внедрению"
+
+#: index.php:138
+msgid ""
+"Do you already have a clear direction in mind for search engine optimization "
+"but need help knowing how best to implement your ideas without losing "
+"rankings? We can guide your development team through tough technical "
+"situations"
+msgstr ""
+"У вас уже есть четкое понимание того, какая поисковая оптимизация вам нужна, "
+"но вам нужна помощь в том, как лучше внедрить ваши идеи без потери позиции "
+"сайта при поиске? Мы можем помочь вашей команде разработчиков преодолеть "
+"сложные технические моменты."
+
+#: index.php:146
+msgid "SEO audits"
+msgstr "SEO-аудиты"
+
+#: index.php:147
+msgid ""
+"With each audit we compile an in-depth analysis of your site’s on-page "
+"optimization and locate immediate areas for improvement. We understand that "
+"no two sites or industries are alike, so this audit can be as specific or "
+"general as needed. Either way, when complete, we guarantee your team will "
+"have multiple actionable items"
+msgstr ""
+"При осуществлении каждого аудита мы проводим глубинный анализ поисковой "
+"оптимизации вашего сайта и определяем непосредственные варианты улучшения. "
+"Мы понимаем, что нет двух одинаковых сайтов или бизнесов, именно поэтому "
+"аудит может быть как специфическим, так и общим, в зависимости от ваших "
+"потребностей. В любом случае, по окончании аудита мы гарантируем вашей "
+"команде множество вариантов возможных решений по оптимизации."
+
+#: index.php:161
+msgid "Keyword research and analysis"
+msgstr "Исследование и анализ ключевых слов"
+
+#: index.php:162
+msgid ""
+"Perhaps the most boring and dreaded task in search marketing, keyword "
+"research can quickly overwhelm fledgling SEOs. We do the dirty work so your "
+"in-house team can focus on the big picture. This analysis goes beyond Word "
+"tracker data,looking at important search and user behavior, in addition to "
+"your high converting and competitive keywords"
+msgstr ""
+"Возможно, самая скучная и пугающая задача в поисковом маркетинге, анализ "
+"ключевых слов, может ошеломить неопытных SEO-специалистов. Мы сделаем за вас "
+"грязную работу, чтобы ваша команда смогла сконцентрироваться на общей "
+"картине. Этот анализ выходит за рамки информации, полученной при помощи "
+"программы Wordtracker, и затрагивает немаловажный фактор поведения "
+"пользователя при поиске, а также ваши конкурентные ключевые слова с высоким "
+"коэффициентом конверсии."
+
+#: index.php:170
+msgid "Competitive analysis"
+msgstr "Конкурентный анализ"
+
+#: index.php:171
+msgid ""
+"Are you neck and neck with the competition and need to know exactly what "
+"they’redoing and how? We’ll break down their on- and off-site tactics, "
+"potential service providers, budget estimates and more"
+msgstr ""
+"У вас есть конкуренты, идущие наравне с вами, и вам нужно точно узнать, что "
+"они делают и как? Мы проанализируем их онлайн- и офлайн-тактики, "
+"потенциальных поставщиков услуг, проведем оценку бюджета и др."
+
+#: index.php:185
+msgid "Pay-Per-Click (PPC) Management Services"
+msgstr "Услуги по управлению сервисом оплаты за клик Pay-Per-Click (PPC)"
+
+#: index.php:186
+msgid ""
+"From single keyword ad groups to dedicated landing pages, we believe that "
+"truly groundbreaking pay per click advertising is founded upon a detailed "
+"foundation & constant optimization"
+msgstr ""
+"От рекламных групп по одному ключевому слову до целевых страниц, мы уверены, "
+"что по-настоящему эффективная PPC-реклама основана на детализированной базе "
+"и постоянной оптимизации."
+
+#: index.php:207
+msgid "Blog Posts"
+msgstr "Блог"
+
+#: index.php:208
+msgid "What You Get Using Our SEO Company’s"
+msgstr "Что Вы получите от наших СЕО компаний"
+
+#: index.php:219
+msgid "5 of the most exciting new developments in pay per click"
+msgstr ""
+
+#: index.php:220
+msgid ""
+"Successfully targeting internet users with pay-per-click ads typically means "
+"staying on top of – and in front of – how they interact with…"
+msgstr ""
+
+#: index.php:225
+msgid "September"
+msgstr ""
+
+#: index.php:298
+msgid "Questions about pricing?"
+msgstr "Есть вопросы по цене?"
+
+#: index.php:302
+msgid "First name"
+msgstr "Имя"
+
+#: index.php:305
+msgid "Last name"
+msgstr "Фамилия"
+
+#: index.php:308
+msgid "Business name"
+msgstr ""
+
+#: index.php:311
+msgid "Business email"
+msgstr ""
+
+#: index.php:314
+msgid "Business phone"
+msgstr ""
+
+#: index.php:317
+msgid "Send"
+msgstr "Отправить"
+
+#. Name of the theme
+msgid "Laterna Theme"
+msgstr ""
+
+#. Description of the theme
+msgid "WordPress theme for huge site"
+msgstr ""
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "http://zloyleva.site"
+msgstr ""
+
+#. Author of the theme
+msgid "ZloyLeva"
+msgstr ""
