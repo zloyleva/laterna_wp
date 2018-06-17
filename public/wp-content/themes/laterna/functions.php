@@ -34,6 +34,13 @@ function load_laterna_theme_scripts(){
     wp_enqueue_script('bootstrap_script');
     wp_register_script('laterna_theme_script', get_template_directory_uri() . '/scripts/script.js', array('jquery'), '1.0.0', true);
     wp_enqueue_script('laterna_theme_script');
+
+	wp_localize_script( 'laterna_theme_script', 'ajax_data',
+		array(
+			'call_url' => admin_url('admin-ajax.php'),
+			'grow' => 'grow_call_action',
+		)
+	);
 }
 
 
@@ -98,4 +105,18 @@ function custom_excerpt_length( $length ) {
 add_filter( 'excerpt_more', 'excerpt_more' );
 function excerpt_more( $more ) {
     return ' [...]';
+}
+
+
+add_action('wp_ajax_grow_call_action', 'ready_to_grow_callback');
+add_action('wp_ajax_nopriv_grow_call_action', 'ready_to_grow_callback');
+function my_action_callback() {
+
+	wp_send_json([
+		'code' => 200,
+		'name' => $_POST['name'],
+		'email' => $_POST['email'],
+	]);
+
+	wp_die();
 }

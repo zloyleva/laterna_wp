@@ -1,21 +1,23 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: Leterna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-11 23:54+0300\n"
-"PO-Revision-Date: 2018-06-12 00:00+0300\n"
+"POT-Creation-Date: 2018-06-17 14:22+0300\n"
+"PO-Revision-Date: 2018-06-17 14:24+0300\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: .\n"
 "Last-Translator: \n"
 "Language: cs_CZ\n"
+"X-Poedit-SearchPath-0: .\n"
 
 #: header.php:27
 msgid "Search"
-msgstr ""
+msgstr "Vyhledávání"
 
 #: header.php:47 footer.php:18
 msgid "Home"
@@ -27,11 +29,11 @@ msgstr "Služby"
 
 #: header.php:53 footer.php:8 footer.php:20
 msgid "About Us"
-msgstr ""
+msgstr "O nás"
 
 #: header.php:56 footer.php:21
 msgid "Contacts"
-msgstr ""
+msgstr "Kontakty"
 
 #: footer.php:9
 msgid ""
@@ -40,6 +42,9 @@ msgid ""
 "world, desire to be a part of something bigger, creative vision, and "
 "dedication to our work."
 msgstr ""
+"Náš tým je v našem profesionálním prostředí jedinečný, protože žijeme v "
+"životním stylu, ale to, co všichni máme společné, je intenzivní zvědavost na "
+"náš svět, touhu být součástí většího, tvůrčího vize a věnování naší práci."
 
 #: footer.php:10
 msgid "17, Novembra 90/3739, 080 01 Presov, Slovakia"
@@ -47,31 +52,31 @@ msgstr ""
 
 #: footer.php:16
 msgid "General Information"
-msgstr ""
+msgstr "Obecná informace"
 
 #: footer.php:26
 msgid "Recent Posts"
-msgstr ""
+msgstr "Poslední příspěvky"
 
 #: footer.php:63
 msgid "Get In Touch"
-msgstr ""
+msgstr "Být v kontaktu"
 
 #: footer.php:66
 msgid "Name"
-msgstr ""
+msgstr "Název"
 
 #: footer.php:69
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: footer.php:72
 msgid "Massage"
-msgstr ""
+msgstr "Masáž"
 
 #: footer.php:74 index.php:97
 msgid "Submit"
-msgstr ""
+msgstr "Předložit"
 
 #: index.php:15
 msgid "Search engine optimisaton(SEO)"
@@ -146,15 +151,15 @@ msgstr "Požiadajte o bezplatnú konzultáciu v oblasti SEO"
 
 #: index.php:92
 msgid "Type Your name here"
-msgstr ""
+msgstr "Zadejte své jméno zde"
 
 #: index.php:95
 msgid "Type Your Mail here"
-msgstr ""
+msgstr "Zde zadejte svou poštu"
 
 #: index.php:114
 msgid "Our Services"
-msgstr ""
+msgstr "Naše služby"
 
 #: index.php:115
 msgid "Our SEO Consulting services include:"
@@ -162,17 +167,20 @@ msgstr "Naše služby SEO Consulting zahŕňajú:"
 
 #: index.php:122
 msgid "SEO strategy development"
-msgstr ""
+msgstr "Vývoj stratégie SEO"
 
 #: index.php:123
 msgid ""
 "Not sure what you need, but have an SEO budget?We’ll help you define a "
 "custom needs assessment and strategy for long-termsearch marketing success"
 msgstr ""
+"Nie ste si istí, čo potrebujete, ale máte SEO rozpočet? Pomôžeme Vám "
+"definovať hodnotenie vlastných potrieb a stratégiu pre dlhodobý marketingový "
+"úspech."
 
 #: index.php:137
 msgid "Implementation guidelines"
-msgstr ""
+msgstr "Smernice pre implementáciu"
 
 #: index.php:138
 msgid ""
@@ -181,10 +189,14 @@ msgid ""
 "rankings? We can guide your development team through tough technical "
 "situations"
 msgstr ""
+"Máte už jasné smerovanie na optimalizáciu pre vyhľadávače, ale potrebujete "
+"pomoc s vedomím, ako najlepšie realizovať svoje nápady bez toho, aby ste "
+"stratili hodnotenie? Prevedieme Váš vývojový tím cez náročné technické "
+"situácie."
 
 #: index.php:146
 msgid "SEO audits"
-msgstr ""
+msgstr "SEO audit"
 
 #: index.php:147
 msgid ""
@@ -194,10 +206,15 @@ msgid ""
 "general as needed. Either way, when complete, we guarantee your team will "
 "have multiple actionable items"
 msgstr ""
+"Pri každom audite zostavujeme hĺbkovú analýzu optimalizácie stránky na "
+"stránke a nájdeme okamžité oblasti na zlepšenie. Chápeme, že žiadne dve "
+"stránky alebo dva obchodu nie sú podobné, takže tento audit môže byť "
+"špecifický alebo všeobecný, ak to bude potrebné. Garantujeme, že váš tím "
+"bude mať viac akčných položiek či tak či onak."
 
 #: index.php:161
 msgid "Keyword research and analysis"
-msgstr ""
+msgstr "Výskum a analýza kľúčových slov"
 
 #: index.php:162
 msgid ""
@@ -207,10 +224,16 @@ msgid ""
 "tracker data,looking at important search and user behavior, in addition to "
 "your high converting and competitive keywords"
 msgstr ""
+"Výskum kľúčových slov, čo je možno najnáročnejšia a obávaná úloha v "
+"marketingu vyhľadávania, môže rýchlo prekonať začínajúcich v SEO. Robíme "
+"špinavú prácu pre Vás, aby sa Váš tím mohol sústrediť na niečom veľkom. Táto "
+"analýza presahuje údaje služby Wordtracker, okrem dôležitých kľúčových slov "
+"v oblasti vyhľadávania a používania Vašich konverzií a konkurenčných "
+"kľúčových slov."
 
 #: index.php:170
 msgid "Competitive analysis"
-msgstr ""
+msgstr "Konkurenčná analýza"
 
 #: index.php:171
 msgid ""
@@ -218,10 +241,13 @@ msgid ""
 "they’redoing and how? We’ll break down their on- and off-site tactics, "
 "potential service providers, budget estimates and more"
 msgstr ""
+"Ste bok po boku s konkurenčnými firmami a potrebujete presne vedieť, čo "
+"robia a ako? Rozoberieme ich taktiku (online alebo offline), potenciálnych "
+"poskytovateľov služieb, rozpočtové odhady, atď.."
 
 #: index.php:185
 msgid "Pay-Per-Click (PPC) Management Services"
-msgstr ""
+msgstr "Služby \"Platba za klik\" - Pay-Per-Click (PPC)"
 
 #: index.php:186
 msgid ""
@@ -229,18 +255,21 @@ msgid ""
 "truly groundbreaking pay per click advertising is founded upon a detailed "
 "foundation & constant optimization"
 msgstr ""
+"Od reklamných skupín s jedným kľúčovým slovom až po vyhradené vstupné "
+"stránky, veríme, že skutočne prevratná reklama s platbou za kliknutie je "
+"založená na podrobnej nadácii a neustálej optimalizácii."
 
 #: index.php:207
 msgid "Blog Posts"
-msgstr ""
+msgstr "Příspěvky v blogu"
 
 #: index.php:208
 msgid "What You Get Using Our SEO Company’s"
-msgstr ""
+msgstr "Co získáte pomocí SEO společností"
 
 #: index.php:219
 msgid "5 of the most exciting new developments in pay per click"
-msgstr ""
+msgstr "5 z nejvíce vzrušujícího nového vývoje plateb za proklik"
 
 #: index.php:220
 msgid ""
@@ -254,31 +283,31 @@ msgstr ""
 
 #: index.php:298
 msgid "Questions about pricing?"
-msgstr ""
+msgstr "Otázky týkající se stanovení cen?"
 
 #: index.php:302
 msgid "First name"
-msgstr ""
+msgstr "Jméno"
 
 #: index.php:305
 msgid "Last name"
-msgstr ""
+msgstr "Příjmení"
 
 #: index.php:308
 msgid "Business name"
-msgstr ""
+msgstr "Obchodní jméno"
 
 #: index.php:311
 msgid "Business email"
-msgstr ""
+msgstr "Obchodní e-mail"
 
 #: index.php:314
 msgid "Business phone"
-msgstr ""
+msgstr "Pracovní telefon"
 
 #: index.php:317
 msgid "Send"
-msgstr ""
+msgstr "Poslat"
 
 #. Name of the theme
 msgid "Laterna Theme"

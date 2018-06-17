@@ -4,7 +4,7 @@ console.log('App was loaded');
 
 window.Vue = require('vue');
 
-// Vue.component();
+Vue.component('ready-to-grow', require('./components/ReadyToGrowSendComponent'));
 
 const app = new Vue({
     el: '#app'

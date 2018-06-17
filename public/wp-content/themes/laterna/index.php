@@ -86,15 +86,11 @@
                     <h2 class="text-center w-100"><?php _e('Ready to grow?', 'laterna')?></h2>
                     <p class="text-center w-100"><?php _e('Request a free SEO consultation', 'laterna')?></p>
                 </div>
-                <form action="" class="form-inline justify-content-center" method="post">
-                    <div class="input-group mb-2 mr-sm-2">
-                        <input name="username" type="text" class="form-control" placeholder="<?php _e('Type Your name here', 'laterna')?>">
-                    </div>
-                    <div class="input-group mb-2 mr-sm-2">
-                        <input name="useremail" type="email" class="form-control" placeholder="<?php _e('Type Your Mail here', 'laterna')?>">
-                    </div>
-                    <button type="submit" class="btn btn-primary mb-2"><?php _e('Submit', 'laterna')?></button>
-                </form>
+                <ready-to-grow
+                        username_pl="<?php _e('Type Your name here', 'laterna')?>"
+                        useremail_pl="<?php _e('Type Your Mail here', 'laterna')?>"
+                        button_name="<?php _e('Submit', 'laterna')?>"
+                ></ready-to-grow>
             </div>
         </div>
     </div>
