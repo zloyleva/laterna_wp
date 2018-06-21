@@ -34,6 +34,14 @@ function load_laterna_theme_scripts(){
     wp_enqueue_script('bootstrap_script');
     wp_register_script('laterna_theme_script', get_template_directory_uri() . '/scripts/script.js', array('jquery'), '1.0.0', true);
     wp_enqueue_script('laterna_theme_script');
+
+	wp_localize_script( 'laterna_theme_script', 'ajax_data',
+		array(
+			'call_url' => admin_url('admin-ajax.php'),
+			'grow' => 'grow_call_action',
+			'nonce' => wp_create_nonce('laterna_ajax-nonce')
+		)
+	);
 }
 
 
@@ -98,4 +106,34 @@ function custom_excerpt_length( $length ) {
 add_filter( 'excerpt_more', 'excerpt_more' );
 function excerpt_more( $more ) {
     return ' [...]';
+}
+
+
+add_action('wp_ajax_grow_call_action', 'ready_to_grow_callback');
+add_action('wp_ajax_nopriv_grow_call_action', 'ready_to_grow_callback');
+function ready_to_grow_callback() {
+
+	if( ! wp_verify_nonce( $_POST['nonce'], 'laterna_ajax-nonce' ) ){
+		wp_send_json([
+			'code' => 422,
+			'error' => 'Error send message',
+		]);
+	}
+
+	$headers = 'From: Laterna <info@laterna.sk>' . "\r\n" ;
+
+	$to = get_option('admin_email');
+	$subject = 'Ready to grow?';
+	$name = sanitize_text_field($_POST['name']);
+	$email = sanitize_email($_POST['email']);
+	$message = "From: name - {$name}, email - {$email}";
+
+	mail( $to, $subject, $message, $headers );
+
+	wp_send_json([
+		'code' => 200,
+		'data' => 'Message was send'
+	]);
+
+	wp_die();
 }

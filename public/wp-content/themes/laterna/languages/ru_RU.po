@@ -1,18 +1,20 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: Leterna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-11 22:33+0300\n"
-"PO-Revision-Date: 2018-06-11 22:41+0300\n"
-"Language-Team: \n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"POT-Creation-Date: 2018-06-21 20:01+0300\n"
+"PO-Revision-Date: 2018-06-21 20:37+0000\n"
+"Language-Team: Russian\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7.1\n"
-"Last-Translator: \n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: .\n"
+"Last-Translator: admin <zloyleva@gmail.com>\n"
 "Language: ru_RU\n"
+"X-Poedit-SearchPath-0: ."
 
 #: header.php:27
 msgid "Search"
@@ -20,7 +22,7 @@ msgstr "Поиск"
 
 #: header.php:47 footer.php:18
 msgid "Home"
-msgstr ""
+msgstr "Главная"
 
 #: header.php:50 footer.php:19 index.php:18
 msgid "Services"
@@ -36,11 +38,14 @@ msgstr "Контакты"
 
 #: footer.php:9
 msgid ""
-"Our team is as unique in our professional backgrounds as we are in "
-"lifestyle, but what we all have in commonis an intense curiosity about our "
-"world, desire to be a part of something bigger, creative vision, and "
-"dedication to our work."
+"Our team is as unique in our professional backgrounds as we are in lifestyle,"
+" but what we all have in commonis an intense curiosity about our world, "
+"desire to be a part of something bigger, creative vision, and dedication to "
+"our work."
 msgstr ""
+"Наша команда является уникальной в нашей профессиональной среде, так как это "
+"наш стиль жизни, все мы выражаем заботу по отношению к нашему миру, желание "
+"быть частью чего-то большего, а так же преданность к нашей работе."
 
 #: footer.php:10
 msgid "17, Novembra 90/3739, 080 01 Presov, Slovakia"
@@ -257,7 +262,7 @@ msgstr ""
 
 #: index.php:207
 msgid "Blog Posts"
-msgstr "Блог"
+msgstr "Последние посты"
 
 #: index.php:208
 msgid "What You Get Using Our SEO Company’s"

@@ -229,6 +229,10 @@
   }
 }
 
+.content-section.blue .row .container .row .seo-item .row .icon-block {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .content-section.blue .row .container .row .seo-item .row .icon-block {
     -webkit-box-ordinal-group: 1;
@@ -236,6 +240,10 @@
             order: 0;
     text-align: center;
   }
+}
+
+.ready_to_grow input.input_name {
+  display: none;
 }
 
 footer.container-fluid {
@@ -313,6 +321,10 @@ footer.container-fluid .row .container .row .item .article .desc .date {
 
 .article-section .row .container .row .meta-info small {
   margin-right: 10px;
+}
+
+input.error_input {
+  border-color: #f00;
 }
 
 * {
