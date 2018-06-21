@@ -1,6 +1,6 @@
 <template>
-    <form action="" class="form-inline justify-content-center" method="post" @submit.prevent="submitGrowSubmit">
-        <input type="text" class="" name="user" >
+    <form action="" class="form-inline justify-content-center ready_to_grow" method="post" @submit.prevent="submitGrowSubmit">
+        <input type="text" class="" name="user" class="input_name" v-model="input_name">
         <div class="input-group mb-2 mr-sm-2">
             <input v-validate="{ required: true, min: 3 }" name="user_name" type="text" class="form-control"
                    :placeholder="username_text" v-model="user" :class="{'error_input': isNameInValid}">
@@ -32,6 +32,7 @@
                 email: '',
                 isEmailInValid: false,
                 isNameInValid: false,
+                input_name: ''
             }
         },
         created(){
@@ -60,14 +61,19 @@
 
                 axios.post(ajax_data.call_url,params)
                     .then((response) => {
-                        console.log(response.data)
+                        console.log(response.data);
+                        this.cleanFields();
                     })
 
             },
             isValidFields(){
                 this.isEmailInValid = this.fields.user_email.invalid;
                 this.isNameInValid = this.fields.user_name.invalid;
-                return this.fields.user_email.valid;
+                return this.fields.user_email.valid && this.fields.user_name.valid && !this.input_name;
+            },
+            cleanFields(){
+                this.user = '';
+                this.email = '';
             }
         }
     }

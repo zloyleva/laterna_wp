@@ -242,6 +242,10 @@
   }
 }
 
+.ready_to_grow input.input_name {
+  display: none;
+}
+
 footer.container-fluid {
   background: #171F2A;
 }

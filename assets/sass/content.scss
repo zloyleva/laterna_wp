@@ -126,6 +126,12 @@ $desc_text_color: #747572;
   }
 }
 
+.ready_to_grow{
+  input.input_name{
+    display: none;
+  }
+}
+
 .contact-section.brown{
   .row{
     .container{

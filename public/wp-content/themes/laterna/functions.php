@@ -120,21 +120,19 @@ function ready_to_grow_callback() {
 		]);
 	}
 
-	$headers = array(
-		'From: Laterna <info@laerna.sk>',
-		'content-type: text/html',
-	);
+	$headers = 'From: Laterna <info@laterna.sk>' . "\r\n" ;
 
 	$to = get_option('admin_email');
 	$subject = 'Ready to grow?';
-	$message = "";
+	$name = sanitize_text_field($_POST['name']);
+	$email = sanitize_email($_POST['email']);
+	$message = "From: name - {$name}, email - {$email}";
 
-	wp_mail( $to, $subject, $message, $headers );
+	mail( $to, $subject, $message, $headers );
 
 	wp_send_json([
 		'code' => 200,
-		'name' => $_POST['name'],
-		'email' => $_POST['email'],
+		'data' => 'Message was send'
 	]);
 
 	wp_die();

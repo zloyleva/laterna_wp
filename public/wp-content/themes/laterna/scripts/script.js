@@ -50433,7 +50433,7 @@ exports = module.exports = __webpack_require__(42)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -50928,7 +50928,8 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_0_vee_validate__["a" /* default */]);
             user: '',
             email: '',
             isEmailInValid: false,
-            isNameInValid: false
+            isNameInValid: false,
+            input_name: ''
         };
     },
     created: function created() {
@@ -50946,6 +50947,7 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_0_vee_validate__["a" /* default */]);
             }
         },
         sendAjax: function sendAjax() {
+            var _this = this;
 
             var params = new URLSearchParams();
             params.append('action', ajax_data.grow);
@@ -50955,12 +50957,17 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_0_vee_validate__["a" /* default */]);
 
             axios.post(ajax_data.call_url, params).then(function (response) {
                 console.log(response.data);
+                _this.cleanFields();
             });
         },
         isValidFields: function isValidFields() {
             this.isEmailInValid = this.fields.user_email.invalid;
             this.isNameInValid = this.fields.user_name.invalid;
-            return this.fields.user_email.valid;
+            return this.fields.user_email.valid && this.fields.user_name.valid && !this.input_name;
+        },
+        cleanFields: function cleanFields() {
+            this.user = '';
+            this.email = '';
         }
     }
 });
@@ -50976,7 +50983,7 @@ var render = function() {
   return _c(
     "form",
     {
-      staticClass: "form-inline justify-content-center",
+      staticClass: "form-inline justify-content-center ready_to_grow",
       attrs: { action: "", method: "post" },
       on: {
         submit: function($event) {
@@ -50986,7 +50993,27 @@ var render = function() {
       }
     },
     [
-      _c("input", { attrs: { type: "text", name: "user" } }),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.input_name,
+            expression: "input_name"
+          }
+        ],
+        staticClass: "input_name",
+        attrs: { type: "text", name: "user", class: "input_name" },
+        domProps: { value: _vm.input_name },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.input_name = $event.target.value
+          }
+        }
+      }),
       _vm._v(" "),
       _c("div", { staticClass: "input-group mb-2 mr-sm-2" }, [
         _c("input", {
