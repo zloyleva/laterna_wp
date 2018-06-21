@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="item col-lg-3 d-none d-sm-none d-md-none d-lg-block">
-                    <h3 class="header my-3"><?php _e('Recent Posts', 'laterna')?></h3>
+                    <h3 class="header my-3"><?php _e('Blog Posts', 'laterna')?></h3>
                     <?php
                     $args = array(
                         'numberposts' => 3,

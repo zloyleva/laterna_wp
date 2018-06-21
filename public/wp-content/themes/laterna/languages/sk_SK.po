@@ -3,17 +3,17 @@ msgstr ""
 "Project-Id-Version: Leterna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-20 22:56+0300\n"
-"PO-Revision-Date: 2018-06-21 20:01+0300\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2018-06-21 20:33+0000\n"
+"Language-Team: Slovak\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-Basepath: .\n"
-"Last-Translator: \n"
-"Language: sk\n"
-"X-Poedit-SearchPath-0: .\n"
+"Last-Translator: admin <zloyleva@gmail.com>\n"
+"Language: sk_SK\n"
+"X-Poedit-SearchPath-0: ."
 
 #: header.php:27
 msgid "Search"
@@ -21,7 +21,7 @@ msgstr "Vyhľadávanie"
 
 #: header.php:47 footer.php:18
 msgid "Home"
-msgstr ""
+msgstr "Hlavná"
 
 #: header.php:50 footer.php:19 index.php:18
 msgid "Services"
@@ -37,10 +37,10 @@ msgstr "Kontakty"
 
 #: footer.php:9
 msgid ""
-"Our team is as unique in our professional backgrounds as we are in "
-"lifestyle, but what we all have in commonis an intense curiosity about our "
-"world, desire to be a part of something bigger, creative vision, and "
-"dedication to our work."
+"Our team is as unique in our professional backgrounds as we are in lifestyle,"
+" but what we all have in commonis an intense curiosity about our world, "
+"desire to be a part of something bigger, creative vision, and dedication to "
+"our work."
 msgstr ""
 "Náš tím je v našom profesionálnom prostredí jedinečný, pretože žijeme v "
 "životnom štýle, ale to, čo všetci máme, je v našej spoločnosti intenzívna "
@@ -56,7 +56,7 @@ msgid "General Information"
 msgstr "Všeobecné informácie"
 
 #: footer.php:26
-msgid "Recent Posts"
+msgid "Blog Posts"
 msgstr "Posledné príspevky"
 
 #: footer.php:63
@@ -256,10 +256,6 @@ msgstr ""
 "Od reklamných skupín s jedným kľúčovým slovom až po vyhradené vstupné "
 "stránky, veríme, že skutočne prevratná reklama s platbou za kliknutie je "
 "založená na podrobnej nadácii a neustálej optimalizácii."
-
-#: index.php:207
-msgid "Blog Posts"
-msgstr "Príspevky blogu"
 
 #: index.php:208
 msgid "What You Get Using Our SEO Company’s"
