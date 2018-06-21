@@ -25,7 +25,9 @@
   "directories": {
     "test": "tests"
   },
-  "dependencies": {},
+  "dependencies": {
+    "vee-validate": "^2.1.0-beta.2"
+  },
   "repository": {
     "type": "git",
     "url": "git@gitlab.s-pro.io:Janado/backend.git"

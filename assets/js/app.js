@@ -10,6 +10,8 @@ const app = new Vue({
     el: '#app'
 });
 
+
+
 import {Menu} from './menu/menu'
 new Menu();
 

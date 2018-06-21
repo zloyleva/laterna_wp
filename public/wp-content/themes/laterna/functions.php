@@ -39,6 +39,7 @@ function load_laterna_theme_scripts(){
 		array(
 			'call_url' => admin_url('admin-ajax.php'),
 			'grow' => 'grow_call_action',
+			'nonce' => wp_create_nonce('laterna_ajax-nonce')
 		)
 	);
 }
@@ -110,7 +111,25 @@ function excerpt_more( $more ) {
 
 add_action('wp_ajax_grow_call_action', 'ready_to_grow_callback');
 add_action('wp_ajax_nopriv_grow_call_action', 'ready_to_grow_callback');
-function my_action_callback() {
+function ready_to_grow_callback() {
+
+	if( ! wp_verify_nonce( $_POST['nonce'], 'laterna_ajax-nonce' ) ){
+		wp_send_json([
+			'code' => 422,
+			'error' => 'Error send message',
+		]);
+	}
+
+	$headers = array(
+		'From: Laterna <info@laerna.sk>',
+		'content-type: text/html',
+	);
+
+	$to = get_option('admin_email');
+	$subject = 'Ready to grow?';
+	$message = "";
+
+	wp_mail( $to, $subject, $message, $headers );
 
 	wp_send_json([
 		'code' => 200,

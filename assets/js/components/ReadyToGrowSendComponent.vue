@@ -1,16 +1,23 @@
 <template>
-    <form action="" class="form-inline justify-content-center" method="post">
+    <form action="" class="form-inline justify-content-center" method="post" @submit.prevent="submitGrowSubmit">
+        <input type="text" class="" name="user" >
         <div class="input-group mb-2 mr-sm-2">
-            <input name="username" type="text" class="form-control" :placeholder="username_text" v-model="user">
+            <input v-validate="{ required: true, min: 3 }" name="user_name" type="text" class="form-control"
+                   :placeholder="username_text" v-model="user" :class="{'error_input': isNameInValid}">
         </div>
         <div class="input-group mb-2 mr-sm-2">
-            <input name="useremail" type="email" class="form-control" :placeholder="useremail_text" v-model="email">
+            <input v-validate="{ required: true, email: true }" name="user_email" type="email" class="form-control"
+                   :placeholder="useremail_text" v-model="email" :class="{'error_input': isEmailInValid}">
         </div>
         <button type="submit" class="btn btn-primary mb-2">{{ button_name_text }}</button>
     </form>
 </template>
 
 <script>
+
+    import VeeValidate from 'vee-validate';
+    Vue.use(VeeValidate);
+
     export default {
         name: "ReadyToGrowSendComponent",
         props:[
@@ -23,6 +30,8 @@
                 button_name_text: '',
                 user: '',
                 email: '',
+                isEmailInValid: false,
+                isNameInValid: false,
             }
         },
         created(){
@@ -30,17 +39,35 @@
             this.useremail_text = this.useremail_pl;
             this.button_name_text = this.button_name;
         },
+        computed:{
+
+        },
         methods:{
+            submitGrowSubmit(){
+              console.log('submitGrowSubmit');
+                if(this.isValidFields()){
+                    this.sendAjax();
+                }
+
+            },
             sendAjax(){
+
                 let params = new URLSearchParams();
                 params.append('action', ajax_data.grow);
                 params.append('name', this.user);
                 params.append('email', this.email);
+                params.append('nonce', ajax_data.nonce);
 
                 axios.post(ajax_data.call_url,params)
                     .then((response) => {
-                    console.log(response.data)
-                })
+                        console.log(response.data)
+                    })
+
+            },
+            isValidFields(){
+                this.isEmailInValid = this.fields.user_email.invalid;
+                this.isNameInValid = this.fields.user_name.invalid;
+                return this.fields.user_email.valid;
             }
         }
     }

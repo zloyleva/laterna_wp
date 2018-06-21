@@ -10,10 +10,6 @@
                 </div>
             </div>
             <div class="row">
-                <h2 class="text-center w-100"><?php _e('Services', 'laterna')?></h2>
-                <p class="desc text-center w-100"><?php _e('What we do?', 'laterna')?></p>
-            </div>
-            <div class="row">
                 <?php	while ( have_posts() ) : the_post(); ?>
                     <div class="col-12 content">
                         <?php the_content(); ?>

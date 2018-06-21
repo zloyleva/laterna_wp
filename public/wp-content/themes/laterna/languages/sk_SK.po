@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Leterna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-17 14:22+0300\n"
-"PO-Revision-Date: 2018-06-17 14:24+0300\n"
+"POT-Creation-Date: 2018-06-20 22:56+0300\n"
+"PO-Revision-Date: 2018-06-21 20:01+0300\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "MIME-Version: 1.0\n"
@@ -12,12 +12,12 @@ msgstr ""
 "X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-Basepath: .\n"
 "Last-Translator: \n"
-"Language: cs_CZ\n"
+"Language: sk\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: header.php:27
 msgid "Search"
-msgstr "Vyhledávání"
+msgstr "Vyhľadávanie"
 
 #: header.php:47 footer.php:18
 msgid "Home"
@@ -42,9 +42,10 @@ msgid ""
 "world, desire to be a part of something bigger, creative vision, and "
 "dedication to our work."
 msgstr ""
-"Náš tým je v našem profesionálním prostředí jedinečný, protože žijeme v "
-"životním stylu, ale to, co všichni máme společné, je intenzivní zvědavost na "
-"náš svět, touhu být součástí většího, tvůrčího vize a věnování naší práci."
+"Náš tím je v našom profesionálnom prostredí jedinečný, pretože žijeme v "
+"životnom štýle, ale to, čo všetci máme, je v našej spoločnosti intenzívna "
+"zvedavosť, túžba byť súčasťou niečoho väčšieho, kreatívneho vízie a "
+"odhodlanie našej práce."
 
 #: footer.php:10
 msgid "17, Novembra 90/3739, 080 01 Presov, Slovakia"
@@ -52,19 +53,19 @@ msgstr ""
 
 #: footer.php:16
 msgid "General Information"
-msgstr "Obecná informace"
+msgstr "Všeobecné informácie"
 
 #: footer.php:26
 msgid "Recent Posts"
-msgstr "Poslední příspěvky"
+msgstr "Posledné príspevky"
 
 #: footer.php:63
 msgid "Get In Touch"
-msgstr "Být v kontaktu"
+msgstr "Dotknite sa"
 
 #: footer.php:66
 msgid "Name"
-msgstr "Název"
+msgstr "Názov"
 
 #: footer.php:69
 msgid "Email"
@@ -76,7 +77,7 @@ msgstr "Masáž"
 
 #: footer.php:74 index.php:97
 msgid "Submit"
-msgstr "Předložit"
+msgstr "Predložiť"
 
 #: index.php:15
 msgid "Search engine optimisaton(SEO)"
@@ -128,10 +129,7 @@ msgid ""
 "who balance passion, creativity, and accountability to produce great results."
 msgstr ""
 "Náš tím online marketingu a SEO konzultantov sú profesionálmi, ktorí vyvážia "
-"vášňou, kreativitou a zodpovednosťou a prinášajú skvelé výsledky. Pre nás "
-"\"otvorený\" prístup znamená komunikovať rýchlo a otvorene. Možno občas "
-"nekontrolujeme naše chovanie, ale veríme, že potrebujete počuť pravdu, aj "
-"keď to nie je v našom záujme. "
+"vášňou, kreativitou a zodpovednosťou a prinášajú skvelé výsledky. "
 
 #: index.php:69
 msgid ""
@@ -151,11 +149,11 @@ msgstr "Požiadajte o bezplatnú konzultáciu v oblasti SEO"
 
 #: index.php:92
 msgid "Type Your name here"
-msgstr "Zadejte své jméno zde"
+msgstr "Napíšte sem svoje meno"
 
 #: index.php:95
 msgid "Type Your Mail here"
-msgstr "Zde zadejte svou poštu"
+msgstr "Tu zadajte svoju poštu"
 
 #: index.php:114
 msgid "Our Services"
@@ -261,21 +259,24 @@ msgstr ""
 
 #: index.php:207
 msgid "Blog Posts"
-msgstr "Příspěvky v blogu"
+msgstr "Príspevky blogu"
 
 #: index.php:208
 msgid "What You Get Using Our SEO Company’s"
-msgstr "Co získáte pomocí SEO společností"
+msgstr "Čo získate pomocou SEO firmy"
 
 #: index.php:219
 msgid "5 of the most exciting new developments in pay per click"
-msgstr "5 z nejvíce vzrušujícího nového vývoje plateb za proklik"
+msgstr "5 z najpôsobivejšieho vývoja v oblasti platieb za kliknutie"
 
 #: index.php:220
 msgid ""
 "Successfully targeting internet users with pay-per-click ads typically means "
 "staying on top of – and in front of – how they interact with…"
 msgstr ""
+"Úspešné zacielenie používateľov internetu pomocou reklám s platbou za "
+"kliknutie znamená zvyčajne zostať na vrchole - a pred nimi - ako komunikujú "
+"s ..."
 
 #: index.php:225
 msgid "September"
@@ -283,31 +284,31 @@ msgstr ""
 
 #: index.php:298
 msgid "Questions about pricing?"
-msgstr "Otázky týkající se stanovení cen?"
+msgstr "Otázky o cenách или Dotaz na cenník?"
 
 #: index.php:302
 msgid "First name"
-msgstr "Jméno"
+msgstr "Meno"
 
 #: index.php:305
 msgid "Last name"
-msgstr "Příjmení"
+msgstr "Priezvisko"
 
 #: index.php:308
 msgid "Business name"
-msgstr "Obchodní jméno"
+msgstr "Názov spoločnosti или Obchodné meno"
 
 #: index.php:311
 msgid "Business email"
-msgstr "Obchodní e-mail"
+msgstr "Eilová adrmaesa spoločnosti"
 
 #: index.php:314
 msgid "Business phone"
-msgstr "Pracovní telefon"
+msgstr "Telefónne číslo spoločnosti"
 
 #: index.php:317
 msgid "Send"
-msgstr "Poslat"
+msgstr "Odoslať"
 
 #. Name of the theme
 msgid "Laterna Theme"
