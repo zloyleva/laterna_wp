@@ -31,7 +31,7 @@
                     <h3 class="header my-3"><?php _e('Blog Posts', 'laterna')?></h3>
                     <?php
                     $args = array(
-                        'numberposts' => 3,
+                        'numberposts' => 5,
                         'post_status' => 'publish',
                         'orderby'     => 'date',
                         'order'       => 'DESC',
@@ -69,18 +69,14 @@
 
                 <div class="item col-md-4 col-lg-3">
                     <h3 class="header my-3"><?php _e('Get In Touch', 'laterna')?></h3>
-                    <form action="">
-                        <div class="form-group my-2">
-                            <input type="text" class="form-control" placeholder="<?php _e('Name', 'laterna')?>">
-                        </div>
-                        <div class="form-group my-2">
-                            <input type="email" class="form-control" placeholder="<?php _e('Email', 'laterna')?>">
-                        </div>
-                        <div class="form-group my-2">
-                            <input type="text" class="form-control" placeholder="<?php _e('Massage', 'laterna')?>">
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block"><?php _e('Submit', 'laterna')?></button>
-                    </form>
+
+                    <contact-us
+                            username_pl = "<?php _e('Name', 'laterna')?>"
+                            useremail_pl = "<?php _e('Email', 'laterna')?>"
+                            message_pl = "<?php _e('Massage', 'laterna')?>"
+                            button_name = "<?php _e('Submit', 'laterna')?>"
+                    ></contact-us>
+
                 </div>
             </div>
         </div>

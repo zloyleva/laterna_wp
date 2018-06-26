@@ -15,7 +15,8 @@
                         <p><?php _e('We’re an SEO agency that runs remarkably successful SEO campaigns in the most competitive sectors, using a unique blend of technical and creative expertise.', 'laterna')?></p>
                         <div class="controls">
                             <a href="<?php echo get_home_url(); ?>/services" class="btn btn-outline-primary"><?php _e('Services', 'laterna')?></a>
-                            <button type="button" class="btn btn-outline-danger"><?php _e('Last news', 'laterna')?></button>
+                            <a href="<?php echo get_home_url(); ?>/blog-posts" class="btn btn-outline-danger"><?php _e('Last news', 'laterna')?></a>
+<!--                            <button type="button" class="btn btn-outline-danger">--><?php //_e('Last news', 'laterna')?><!--</button>-->
                         </div>
                     </div>
                 </div>
@@ -269,26 +270,16 @@
                 <div class="row">
                     <h2 class="text-center w-100"><?php _e('Questions about pricing?', 'laterna')?></h2>
                 </div>
-                <form class="row contact-form">
-                    <div class="col-md-4 my-2">
-                        <input type="text" class="form-control" placeholder="<?php _e('First name', 'laterna')?>">
-                    </div>
-                    <div class="col-md-4 my-2">
-                        <input type="text" class="form-control" placeholder="<?php _e('Last name', 'laterna')?>">
-                    </div>
-                    <div class="col-md-4 my-2">
-                        <input type="text" class="form-control" placeholder="<?php _e('Business name', 'laterna')?>">
-                    </div>
-                    <div class="col-md-4 my-2">
-                        <input type="email" class="form-control" placeholder="<?php _e('Business email', 'laterna')?>">
-                    </div>
-                    <div class="col-md-4 my-2">
-                        <input type="email" class="form-control" placeholder="<?php _e('Business phone', 'laterna')?>">
-                    </div>
-                    <div class="col-md-4 my-2">
-                        <button class="btn btn-primary btn-block"><?php _e('Send', 'laterna')?></button>
-                    </div>
-                </form>
+
+                <question-about-pricing
+                        first_name_pl="<?php _e('First name', 'laterna')?>"
+                        last_name_pl="<?php _e('Last name', 'laterna')?>"
+                        business_name_pl="<?php _e('Business name', 'laterna')?>"
+                        business_email_pl="<?php _e('Business email', 'laterna')?>"
+                        business_phone_pl="<?php _e('Business phone', 'laterna')?>"
+                        button_name_text="<?php _e('Send', 'laterna')?>"
+                ></question-about-pricing>
+
             </div>
         </div>
     </div>

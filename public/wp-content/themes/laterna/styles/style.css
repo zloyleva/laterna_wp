@@ -242,7 +242,7 @@
   }
 }
 
-.ready_to_grow input.input_name {
+.ready_to_grow input.input_name, .contact_us input.input_name, .question-about-pricing input.input_name {
   display: none;
 }
 

@@ -39,6 +39,8 @@ function load_laterna_theme_scripts(){
 		array(
 			'call_url' => admin_url('admin-ajax.php'),
 			'grow' => 'grow_call_action',
+			'getInTouch' => 'get_in_touch_call_action',
+			'questionAboutPricing' => 'question_about_pricing_call_action',
 			'nonce' => wp_create_nonce('laterna_ajax-nonce')
 		)
 	);
@@ -108,25 +110,32 @@ function excerpt_more( $more ) {
     return ' [...]';
 }
 
+function isVerifyPostQuery(){
+	return ! wp_verify_nonce( $_POST['nonce'], 'laterna_ajax-nonce' );
+}
 
-add_action('wp_ajax_grow_call_action', 'ready_to_grow_callback');
-add_action('wp_ajax_nopriv_grow_call_action', 'ready_to_grow_callback');
-function ready_to_grow_callback() {
-
-	if( ! wp_verify_nonce( $_POST['nonce'], 'laterna_ajax-nonce' ) ){
+function laternaSendMail($subject){
+	if( isVerifyPostQuery() ){
 		wp_send_json([
 			'code' => 422,
 			'error' => 'Error send message',
 		]);
+		wp_die();
 	}
 
 	$headers = 'From: Laterna <info@laterna.sk>' . "\r\n" ;
+	$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
-	$to = get_option('admin_email');
-	$subject = 'Ready to grow?';
+	$to = get_option('admin_email'). ', ovv@messinasolutions.com, tlm@messinasolutions.com';
+
 	$name = sanitize_text_field($_POST['name']);
+	$messageRequest = sanitize_text_field(isset($_POST['message'])?$_POST['message']:'');
 	$email = sanitize_email($_POST['email']);
-	$message = "From: name - {$name}, email - {$email}";
+	$message = "From: name - {$name}, email - {$email}.";
+	if($messageRequest){
+		$message .= " Message text: {$messageRequest}";
+	}
+	$message = wordwrap($message, 70, "\r\n");
 
 	mail( $to, $subject, $message, $headers );
 
@@ -136,4 +145,22 @@ function ready_to_grow_callback() {
 	]);
 
 	wp_die();
+}
+
+add_action('wp_ajax_grow_call_action', 'ready_to_grow_callback');
+add_action('wp_ajax_nopriv_grow_call_action', 'ready_to_grow_callback');
+function ready_to_grow_callback() {
+	laternaSendMail('Ready to grow?');
+}
+
+add_action('wp_ajax_get_in_touch_call_action', 'get_in_touch_callback');
+add_action('wp_ajax_nopriv_get_in_touch_call_action', 'get_in_touch_callback');
+function get_in_touch_callback() {
+	laternaSendMail('Get In Touch');
+}
+
+add_action('wp_ajax_question_about_pricing_call_action', 'question_about_pricing_callback');
+add_action('wp_ajax_nopriv_question_about_pricing_call_action', 'question_about_pricing_callback');
+function question_about_pricing_callback() {
+	laternaSendMail('Question about pricing');
 }
